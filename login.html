@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Software 3 Verdes</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenedor-header">
+      <h1>Software 3 Verdes</h1>
+      <p>Inicio de sesión</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="login.html">Login</a>
+    <a href="registro.html">Registro</a>
+    <a href="salida.html">Salida</a>
+    <a href="consultas.html">Consultas</a>
+    <a href="reportes.html">Reportes</a>
+  </nav>
+
+  <main>
+    <section class="card formulario">
+      <h2>Iniciar Sesión</h2>
+      <form onsubmit="return login()">
+        <label for="usuario">Usuario</label>
+        <input type="text" id="usuario" placeholder="Ingrese su usuario">
+
+        <label for="password">Contraseña</label>
+        <input type="password" id="password" placeholder="Ingrese su contraseña">
+
+        <button type="submit">Ingresar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Software 3 Verdes</p>
+  </footer>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>

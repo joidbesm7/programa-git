@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Vehículo</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="contenedor-header">
+      <h1>Software 3 Verdes</h1>
+      <p>Registro de vehículos</p>
+    </div>
+  </header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="login.html">Login</a>
+    <a href="registro.html">Registro</a>
+    <a href="salida.html">Salida</a>
+    <a href="consultas.html">Consultas</a>
+    <a href="reportes.html">Reportes</a>
+  </nav>
+
+  <main>
+    <section class="card formulario">
+      <h2>Registrar Vehículo</h2>
+      <form onsubmit="return registrarVehiculo()">
+       <label for="placa">Placa del vehículo</label>
+       <input type="text" id="placa" placeholder="Ejemplo: ABC123">
+
+        <label for="tipo">Tipo de vehículo</label>
+        <input type="text" id="tipo" placeholder="Automóvil, moto, camioneta">
+
+        <label for="marca">Marca</label>
+        <input type="text" id="marca" placeholder="Ingrese la marca">
+
+        <label for="color">Color</label>
+        <input type="text" id="color" placeholder="Ingrese el color">
+
+        <label for="horaEntrada">Hora de entrada</label>
+        <input type="time" id="horaEntrada">
+
+        <label for="cupo">Número de cupo</label>
+        <input type="number" id="cupo" placeholder="Ingrese el cupo">
+
+        <button type="submit">Registrar vehículo</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Software 3 Verdes</p>
+  </footer>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>

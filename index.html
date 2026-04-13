@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Software 3 Verdes</title>
+  <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+
+  <header>
+  <div class="contenedor-header">
+    
+    <img src="IMAGENES/image2.png" alt="Logo del sistema Software 3 Verdes" class="logo">
+
+    <div class="texto-header">
+      <h1>Software 3 Verdes</h1>
+      <p>Sistema de gestión de parqueaderos</p>
+    </div>
+
+  </div>
+</header>
+
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="login.html">Login</a>
+    <a href="registro.html">Registro</a>
+    <a href="salida.html">Salida</a>
+    <a href="consultas.html">Consultas</a>
+    <a href="reportes.html">Reportes</a>
+  </nav>
+
+  <main>
+    <section class="card">
+      <h2>Bienvenido</h2>
+      <p>
+        Bienvenido al sistema Software 3 Verdes. Esta aplicación permite gestionar el ingreso, salida,
+        consulta y reporte de vehículos dentro del parqueadero de manera organizada, rápida y sencilla.
+      </p>
+      <button onclick="mensajeBienvenida()">Conocer más</button>
+      <button onclick="aumentarTexto()">Aumentar texto</button>
+      <button onclick="disminuirTexto()">Disminuir texto</button>
+      <button onclick="modoAltoContraste()">Alto contraste</button>    
+      <button onclick="leerTexto()">🔊 Escuchar</button>
+      <button onclick="detenerLectura()">⛔ Detener</button>
+      <div class="voz-control">
+
+      <label>Velocidad:</label>
+      <input type="range" min="0.5" max="2" step="0.1" value="1" id="velocidad">
+
+      <label>Voz:</label>
+      <select id="voces"></select>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2026 Software 3 Verdes - Todos los derechos reservados</p>
+  </footer>
+
+  <script src="JS/script.js"></script>
+</body>
+</html>

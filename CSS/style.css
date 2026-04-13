@@ -1,0 +1,233 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+header {
+  background-color: #2e7d32;
+  color: white;
+  padding: 20px;
+}
+
+/* contenedor general */
+.contenedor-header {
+  position: relative;
+}
+
+/* imagen a la izquierda */
+.logo {
+  width: 100px;
+  height: auto;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* texto centrado */
+.texto-header {
+  text-align: center;
+}
+    
+nav {
+  background-color: #1b5e20;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+nav a:hover {
+  background-color: #2e7d32;
+  transform: scale(1.1);
+}
+
+main {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background-color: white;
+  width: 80%;
+  max-width: 800px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+.card:hover {
+  transform: scale(1.02);
+}
+.card {
+  animation: aparecer 1s ease;
+}
+
+@keyframes aparecer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formulario input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+input:focus {
+  border-color: #2e7d32;
+  outline: none;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #2e7d32;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+button:hover {
+  background-color: #1b5e20;
+  transform: scale(1.05);
+}
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #2e7d32;
+  color: white;
+}
+
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+
+footer {
+  background-color: #2e7d32;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+ul {
+  line-height: 2;
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 95%;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 8px;
+  }
+}
+.alto-contraste {
+  background-color: black;
+  color: yellow;
+}
+
+.alto-contraste .card {
+  background-color: black;
+  color: yellow;
+  border: 2px solid yellow;
+}
+
+.alto-contraste nav {
+  background-color: black;
+}
+
+.alto-contraste nav a {
+  color: yellow;
+}
+
+.alto-contraste header,
+.alto-contraste footer {
+  background-color: black;
+  color: yellow;
+}
+input:focus,
+button:focus,
+a:focus {
+  outline: 3px solid #ffeb3b;
+  outline-offset: 2px;
+}
+.voz-control {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.voz-control button {
+  margin: 5px;
+}
+
+.voz-control select,
+.voz-control input {
+  margin: 5px;
+  padding: 5px;
+}
+.accesibilidad {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.accesibilidad button {
+  margin: 5px;
+}
+
+.voz-control {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.voz-control button,
+.voz-control select,
+.voz-control input {
+  margin: 5px;
+}
